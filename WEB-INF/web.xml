@@ -1,4 +1,4 @@
-<webapps>
+<web-app>
     <servlet>
         <servlet-name>template</servlet-name>
         <jsp-file>/template.jsp</jsp-file>
@@ -7,4 +7,31 @@
         <servlet-name>template</servlet-name>
         <url-pattern>/template</url-pattern>
     </servlet-mapping>
-</webapps>
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>input</servlet-name>
+        <jsp-file>/input.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>input</servlet-name>
+        <url-pattern>/input</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>inputServlet</servlet-name>
+        <servlet-class>InputServlet</servlet-class>
+        <init-param>
+            <param-name>defaultMain</param-name>
+            <param-value>defaultMain.jsp</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputServlet</servlet-name>
+        <url-pattern>/inputServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -4,5 +4,13 @@ var Main=function() {
 	var pageHistoryMax = 16;		// —š—ğ‚ÌÅ‘å•Û‘¶”
     var $ = function( id ){ return document.getElementById( id ); };
     //IDŒÄ‚Ño‚µ
-    
+
+    function callTemplate(){
+        $('#header').load('header.html #header-conte');
+        $('sidebar').load('sidebar.html');
+        $('footer').load('footer.html');  
+
+    };
 }
+var main=new Main();
+main.callTemplate();
