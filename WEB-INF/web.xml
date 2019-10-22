@@ -1,0 +1,10 @@
+<webapps>
+    <servlet>
+        <servlet-name>template</servlet-name>
+        <jsp-file>/template.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>template</servlet-name>
+        <url-pattern>/template</url-pattern>
+    </servlet-mapping>
+</webapps>
